@@ -1,0 +1,20 @@
+<p>Lista de productos</p>
+
+<table>
+
+    <thead>
+        <th>Producto</th>
+        <th>Costo</th>
+        <th>Imagen</th>
+        <th>tools</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prod of ferreteria">
+            <td>{{ prod.producto }}</td>
+            <td>{{ prod.costo }}</td>
+            <td><img src="{{ prod.foto }}" alt="" width="100"></td>
+            <td><button class="bg-red-500 rounded-full px-4 py-2 text-white hover:bg-red-700" (click)="onClickDelete(prod)">Eliminar</button></td>
+        </tr>
+    </tbody>
+
+</table>

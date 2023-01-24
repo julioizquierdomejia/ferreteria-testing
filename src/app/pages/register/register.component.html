@@ -1,0 +1,39 @@
+<div class="w-2/5 bg-blue-300 rounded-xl p-6 mx-auto">
+    <h1 class="text-2xl font-bold">Registrar Producto</h1>
+    <form [formGroup]="forRegister">
+        <!-- gourpInputs -->
+        <div class="my-4">
+            <div><label for="producto" class="ml-1 text-slate-500 my-2">Producto</label></div>
+            <div>
+                <input type="text" name="producto" formControlName="producto" class="border border-solid borde-slate-800 border-1 px-4 py-2 rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- gourpInputs -->
+        <div class="my-4">
+            <div><label for="costo" class="ml-1 text-slate-500 my-2">Costo</label></div>
+            <div>
+                <input type="text" name="costo" formControlName="costo" class="border border-solid borde-slate-800 border-1 px-4 py-2 rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- gourpInputs -->
+        <div class="my-4">
+            <div><label for="foto" class="ml-1 text-slate-500 my-2">Foto</label></div>
+            <div>
+                <input type="text" name="foto" formControlName="foto" class="border border-solid borde-slate-800 border-1 px-4 py-2 rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- gourpInputs -->
+        <div>
+            <button class="rounded-full px-4 py-2 bg-blue-500 hover:bg-blue-800 hover:text-white" (click)="onSubmit()">Registrar</button>
+        </div>
+
+    </form>
+
+
+</div>
